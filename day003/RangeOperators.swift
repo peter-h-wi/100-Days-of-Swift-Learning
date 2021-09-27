@@ -31,5 +31,6 @@ default:
 // Useful in an array
 let items = ["iPhone", "iPad", "iMac", "iCloud", "iPod"]
 print(items[0])
-print(items[1...3]) // if the index of 3 
+print(items[1...3]) // be careful for the index.
 print(items[2...])
+print(items[...2])
