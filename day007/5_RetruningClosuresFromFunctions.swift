@@ -1,8 +1,10 @@
 // author:  Peter Wi
 // Github:  peter-h-wi
 // Date:    10/03/2021
+// Source for learning: Hacking With Swift by Paul Hudson
 
 import UIKit
+
 
 // As you can pass a closure to a function,
 // You can get closures returned from a function.
@@ -72,4 +74,4 @@ print(random1)
 //      we need to change everything from "getRandomNumber" --> "getRandomNumber2"
 // in the second case,
 //      what we need to change is "generator = makeRandomGenerator()" --> "generator = makeRandomGenerator2()"
- 
+

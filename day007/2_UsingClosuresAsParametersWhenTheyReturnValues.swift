@@ -1,8 +1,10 @@
 // author:  Peter Wi
 // Github:  peter-h-wi
-// Date:    10/02/2021
+// Date:    10/03/2021
+// Source for learning: Hacking With Swift by Paul Hudson
 
 import UIKit
+
 
 func watch(action: (String) -> String) {
     print("I am going to a theater.")
