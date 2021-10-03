@@ -7,6 +7,7 @@ import UIKit
 func watch(action: (String) -> String) {
     print("I am going to a theater.")
     let message = action("Parasite")
+    print(message)
     print("It was cool.")
 }
 
