@@ -10,7 +10,7 @@ import UIKit
 //      ==> set rules like what methods, what properties they should have
 // similar to interface.
 protocol Eatable {
-    // have an amount, that can be read or written.
+    // can be read only or read/write
     var amount: Int { get set}
 }
 
