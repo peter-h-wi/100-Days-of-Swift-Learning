@@ -9,6 +9,7 @@ import UIKit
 //  ==> Unlike with classes, you can inherit from multiple protocols at the same time before you add your own cutomizations on top.
 
 protocol Tradable {
+    // func can be mutating func
     func calculatePrices() -> Double
 }
 
