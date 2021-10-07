@@ -12,6 +12,7 @@ protocol Eatable {
     func taste()
 }
 
+// you can speecify only te existing functions.
 extension Eatable {
     func taste() {
         print("\(name) tastes good.")
