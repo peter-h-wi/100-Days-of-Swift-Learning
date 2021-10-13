@@ -9,7 +9,7 @@
 import UIKit
 
 // I want to create a new screen of data called ViewController, based on UIViewController.
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
     
     // the pictures array will exist for as long as the screen exists
     var pictures = [String]()
@@ -42,6 +42,25 @@ class ViewController: UIViewController {
         
         print(pictures)
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // section: table views can be split into sections.
+        return pictures.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // IndexPath: data type that contains both a section number and a row number. We only have one section, so we can ignore that and just use the row number.
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+        
+        // iOS only creates as many rows as it needs to work. When one rows moves off the top of the screen, iOS will take it away and put it into a reuse queue ready to be recycled into a new row that comes in from the bottom. This means you can scroll through hundreds of rows a second, and iOS can behave lazily and avoid creating any new table view cells - it just recycles the existing ones.
+        // ==> dequeueReusableCell
+        
+        // textLabel? : do this only if there is an actual text label there, or do nothing otherwise.
+        cell.textLabel?.text = pictures[indexPath.row]
+        return cell
+    }
+    
+    
 
 
 }
