@@ -24,6 +24,7 @@
 		FE950D1E270F9044000D9AF1 /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE950D14270F9044000D9AF1 /* nssl0033.jpg */; };
 		FE950D1F270F9044000D9AF1 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE950D15270F9044000D9AF1 /* nssl0034.jpg */; };
 		FE950D21270F957A000D9AF1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FE950D20270F957A000D9AF1 /* .gitignore */; };
+		FEF75B7327174ED200D457AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF75B7227174ED200D457AB /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FE950D14270F9044000D9AF1 /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		FE950D15270F9044000D9AF1 /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		FE950D20270F957A000D9AF1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FEF75B7227174ED200D457AB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				FE950CF7270F902C000D9AF1 /* AppDelegate.swift */,
 				FE950CF9270F902C000D9AF1 /* SceneDelegate.swift */,
 				FE950CFB270F902C000D9AF1 /* ViewController.swift */,
+				FEF75B7227174ED200D457AB /* DetailViewController.swift */,
 				FE950CFD270F902C000D9AF1 /* Main.storyboard */,
 				FE950D00270F902D000D9AF1 /* Assets.xcassets */,
 				FE950D02270F902D000D9AF1 /* LaunchScreen.storyboard */,
@@ -194,6 +197,7 @@
 				FE950CFC270F902C000D9AF1 /* ViewController.swift in Sources */,
 				FE950CF8270F902C000D9AF1 /* AppDelegate.swift in Sources */,
 				FE950CFA270F902C000D9AF1 /* SceneDelegate.swift in Sources */,
+				FEF75B7327174ED200D457AB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
