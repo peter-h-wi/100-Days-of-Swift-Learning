@@ -32,7 +32,9 @@ class ViewController: UITableViewController {
         let path = Bundle.main.resourcePath!
         
         // items: an array of strings containing filenames.
-        let items = try! fm.contentsOfDirectory(atPath: path)
+        var items = try! fm.contentsOfDirectory(atPath: path)
+
+        items.sort()
         
         for item in items {
             if item.hasPrefix("nssl") {
@@ -58,6 +60,8 @@ class ViewController: UITableViewController {
         
         // textLabel? : do this only if there is an actual text label there, or do nothing otherwise.
         cell.textLabel?.text = pictures[indexPath.row]
+        cell.textLabel?.font = cell.textLabel?.font.withSize(20)
+        
         return cell
     }
     
@@ -66,6 +70,9 @@ class ViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             // 2: success! Set its selectedImage property
             vc.selectedImage = pictures[indexPath.row]
+            vc.totalImageNumber = pictures.count
+            vc.thisImageIndex = indexPath.row+1
+            
             // 3: now push it onto the navigation controller
             navigationController?.pushViewController(vc, animated: true)
         }

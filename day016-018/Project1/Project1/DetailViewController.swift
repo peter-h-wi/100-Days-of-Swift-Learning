@@ -11,10 +11,12 @@ class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     // @IBOutlet: used to tell Xcode that there's a connection between this line of code and Interface Builder
     var selectedImage: String?
+    var totalImageNumber: Int = 0
+    var thisImageIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = selectedImage
+        title = "Picture \(thisImageIndex) of \(totalImageNumber)"
         navigationItem.largeTitleDisplayMode = .never
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
