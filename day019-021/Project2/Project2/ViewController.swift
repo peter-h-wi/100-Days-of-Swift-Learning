@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var countries = [String]()
     var correctAnswer = 0
     var score = 0
+    var numQuestions = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,6 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
-        
         // askQuestion() - originally there was no parameter. so how to fix it?
         //      1. askQuestion(action: nil)
         //      2. redefine askQuestion() so that the action has default parameter of nil
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
     }
     
     func askQuestion(action: UIAlertAction! = nil) {
+        numQuestions += 1
         // shuffle() for in-place shuffling
         // shuffled() to return an new, shuffled array
         countries.shuffle()
@@ -61,37 +62,52 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
 
         correctAnswer = Int.random(in: 0...2)
-        title = countries[correctAnswer].uppercased()
+        title = countries[correctAnswer].uppercased() + "      SCORE: \(score)"
     }
+    
 
     // @IBOutlet: way of connecting code to storyboard layouts
     // @IBAction: way of making storyboard layouts trigger code
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
-        
+        var msg: String
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            msg = "Your score is \(score)"
         } else {
             title = "Wrong"
+            let flag = countries[sender.tag]
             score -= 1
+            msg = "Wrong! That's the flag of \(flag.uppercased()). Your score is \(score)"
+        }
+                    
+        if (numQuestions < 10) {
+            // UIAlertController(): used to show an alert with options to the user.
+            
+            let ac = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            present(ac, animated: true)
+            // preferredStyle - 1. .alert: pops up a message box over the center of the screen
+            //                  2. .actionSheet: asking them to choose from a set of options
+            // UIAlertAction: add a button to the alert that says "Continue", and gives in the style "default".
+            //                  1. style: .default, .cancel, and .destructive ==> looks different based on iOS
+            //                  2. handler: looking for a closure which is some code that it can execute when the button is tapped.
+            // Reason to use askQuestion instead of askQuestion():
+            //      1. askQuestion: "here's the name of the method to run"
+            //      2. askQuestion(): "run the askQuestion() method now, and it will tell you the name of the method to run."
+            // present() - two parameters - 1. view controller: to present
+            //                              2. whether to animate the presentation.
+            //       (optional parameters)  3. another closure that should be executed when the presentation animation has finished.
+        } else {
+            title = "Final Score"
+            let ac = UIAlertController(title: title, message: "Your final score is \(score).", preferredStyle: .alert)
+            score = 0
+            numQuestions = 0
+            ac.addAction(UIAlertAction(title: "Retry", style: .default, handler: askQuestion))
+            present(ac, animated: true)
         }
         
-        // UIAlertController(): used to show an alert with options to the user.
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        present(ac, animated: true)
-        // preferredStyle - 1. .alert: pops up a message box over the center of the screen
-        //                  2. .actionSheet: asking them to choose from a set of options
-        // UIAlertAction: add a button to the alert that says "Continue", and gives in the style "default".
-        //                  1. style: .default, .cancel, and .destructive ==> looks different based on iOS
-        //                  2. handler: looking for a closure which is some code that it can execute when the button is tapped.
-        // Reason to use askQuestion instead of askQuestion():
-        //      1. askQuestion: "here's the name of the method to run"
-        //      2. askQuestion(): "run the askQuestion() method now, and it will tell you the name of the method to run."
-        // present() - two parameters - 1. view controller: to present
-        //                              2. whether to animate the presentation.
-        //       (optional parameters)  3. another closure that should be executed when the presentation animation has finished.
     }
     
 }
