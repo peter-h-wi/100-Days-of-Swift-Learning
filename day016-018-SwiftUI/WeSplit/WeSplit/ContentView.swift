@@ -11,31 +11,77 @@
 import SwiftUI
 
 struct ContentView: View {
-    let macbookSize = ["13-inch", "14-inch", "16-inch"]
-    @State private var selectedMacbook = "14-inch"
+    @State private var checkAmount = 0.0
+    @State private var numberOfPeople = 2
+    @State private var tipPercentage = 20
+    
+    // if we don't use it, the decimal and number keypads will not be dismissed.
+    @FocusState private var amountIsFocused: Bool
+    
+    let tipPercentages = [10, 15, 20, 25, 0]
+    
+    var totalPerPerson: Double {
+        let peopleCount = Double(numberOfPeople + 2)
+        let tipSelection = Double(tipPercentage)
+        
+        let tipValue = checkAmount / 100 * tipSelection
+        let grandTotal = checkAmount + tipValue
+        let amountPerPerson = grandTotal / peopleCount
+
+        return amountPerPerson
+    }
     
     var body: some View {
         NavigationView {
             Form {
-                // Picker has a label "Select your macbook"
-                Picker("Select your macbook", selection: $selectedMacbook) {
-                    // id: \.self : this exists because SwiftUI needs to be able to identify every view on the screen uniquely, so it can detect when things change.
-                    // \.self : the strings themselves are unique. However, if you added duplicate strings to the macbookSize, you might hit problems.
-                    ForEach(macbookSize, id: \.self) {
-                        Text($0)
+                Section {
+                    // Locale: struct which is responsible for storing user's region settings (from calendar, separate digits, metric system, and more)
+                    TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                    // if we don't use the keyboardType, it shows regular keyboard.
+                        .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
+                    
+                    // We need to add a navigation view, so that picker can work.
+                    // Picker works outside a form.
+                    Picker("Number of people", selection: $numberOfPeople) {
+                        // it will show 4 people as its numberOfPeople(index) is 2
+                        ForEach(2 ..< 100) {
+                            Text("\($0) people")
+                        }
+                    }
+                }
+                Section {
+                    // the label doesn't work because of the pcikerStyle --> we use header
+                    Picker("Tip percentage", selection: $tipPercentage) {
+                        //--> this is the first closure which is body.
+                        ForEach(tipPercentages, id: \.self) {
+                            Text($0, format: .percent)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                } header: {
+                    // --> this is the second closure which is header
+                    Text("How much tip do you want to leave?")
+                }
+                
+                Section {
+                    Text(totalPerPerson, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                }
+            }
+            .navigationTitle("WeSplit")
+            // toolbar(): specify toolbar items for a view.
+            .toolbar {
+                // ToolbarItemGroup: place one or more buttons in a specific location, and this is where we get to specify we wnat a "keyboard" toolbar - a toolbar that is attached to the keyboard, so it will automatically appear and disappear with the keyboard.
+                ToolbarItemGroup(placement: .keyboard) {
+                    // Spacer: flexible space. In this case, it will push our button to the right
+                    Spacer()
+                    Button("Done") {
+                        amountIsFocused = false
                     }
                 }
             }
         }
-        Form {
-            // Foreach: 1. loop over arrays and ranges, creating as many views as needed.
-            //          2. doesn't get hit by 10-view limit
-            //          3. run a closure once for every item it loops over, passing in the current loop item.
-            //          4. useful when working with "Picker" view.
-            ForEach(0..<100) {
-                Text("Row \($0)")
-            }
-        }
+        
     }
 }
 
