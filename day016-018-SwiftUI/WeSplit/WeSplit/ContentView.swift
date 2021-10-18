@@ -17,9 +17,7 @@ struct ContentView: View {
     
     // if we don't use it, the decimal and number keypads will not be dismissed.
     @FocusState private var amountIsFocused: Bool
-    
-    let tipPercentages = [10, 15, 20, 25, 0]
-    
+     
     var totalPerPerson: Double {
         let peopleCount = Double(numberOfPeople + 2)
         let tipSelection = Double(tipPercentage)
@@ -31,12 +29,23 @@ struct ContentView: View {
         return amountPerPerson
     }
     
+    var totalAmount: Double {
+        let tipSelection = Double(tipPercentage)
+        let tipValue = checkAmount / 100 * tipSelection
+        let grandTotal = checkAmount + tipValue
+        return grandTotal
+    }
+    
+    var currencyFormat: FloatingPointFormatStyle<Double>.Currency {
+        return .currency(code: Locale.current.currencyCode ?? "USD")
+    }
+    
     var body: some View {
         NavigationView {
             Form {
                 Section {
                     // Locale: struct which is responsible for storing user's region settings (from calendar, separate digits, metric system, and more)
-                    TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                    TextField("Amount", value: $checkAmount, format: currencyFormat)
                     // if we don't use the keyboardType, it shows regular keyboard.
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
@@ -54,18 +63,26 @@ struct ContentView: View {
                     // the label doesn't work because of the pcikerStyle --> we use header
                     Picker("Tip percentage", selection: $tipPercentage) {
                         //--> this is the first closure which is body.
-                        ForEach(tipPercentages, id: \.self) {
+                        ForEach(0..<101) {
                             Text($0, format: .percent)
                         }
                     }
-                    .pickerStyle(.segmented)
+                    //.pickerStyle(.segmented)
                 } header: {
                     // --> this is the second closure which is header
                     Text("How much tip do you want to leave?")
                 }
                 
                 Section {
-                    Text(totalPerPerson, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                    Text(totalAmount, format: currencyFormat)
+                } header: {
+                    Text("Total amount for the check")
+                }
+                
+                Section {
+                    Text(totalPerPerson, format: currencyFormat)
+                } header: {
+                    Text("Amount per person")
                 }
             }
             .navigationTitle("WeSplit")
