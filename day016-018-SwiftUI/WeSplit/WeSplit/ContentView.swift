@@ -11,13 +11,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    // @State private var name = "" doesn't work. Because Swift differentiates between "show the value of this property here" and "show the value of this property here, but write any changes back to the property."
-    // two-way binding: we bind the text field so that it shows the value of our property, but we also bind it so that any changes to the text field also update the property. --> write a dollar sign before them.
-    @State private var name = ""
+    let macbookSize = ["13-inch", "14-inch", "16-inch"]
+    @State private var selectedMacbook = "14-inch"
+    
     var body: some View {
+        NavigationView {
+            Form {
+                // Picker has a label "Select your macbook"
+                Picker("Select your macbook", selection: $selectedMacbook) {
+                    // id: \.self : this exists because SwiftUI needs to be able to identify every view on the screen uniquely, so it can detect when things change.
+                    // \.self : the strings themselves are unique. However, if you added duplicate strings to the macbookSize, you might hit problems.
+                    ForEach(macbookSize, id: \.self) {
+                        Text($0)
+                    }
+                }
+            }
+        }
         Form {
-            TextField("Enter your name", text: $name)
-            Text("Your name is \(name)")
+            // Foreach: 1. loop over arrays and ranges, creating as many views as needed.
+            //          2. doesn't get hit by 10-view limit
+            //          3. run a closure once for every item it loops over, passing in the current loop item.
+            //          4. useful when working with "Picker" view.
+            ForEach(0..<100) {
+                Text("Row \($0)")
+            }
         }
     }
 }
