@@ -11,16 +11,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    // property wrapper: a special attribute we can place before our properties that effectively gives them super powers.
-    // @State: allows us to work around the limiation of structs: we know we can't change their properties because structs are fixed, but @State allows that value to be stored separately by SwiftUI in a place that can be modified.
-    // @State: designed for simple properties that are stored in one view. --> Apple recommends us to add private access control.
-    @State private var tapCount = 0
-    // why we use struct now class? because SwiftUI destroys and recreates your structs frequently.so keeping them small and simple structs for performance.
-    
-    // swift just doesn't allow to write mutating computed properties, so we can't write "mutating var body: some View ..."
+    // @State private var name = "" doesn't work. Because Swift differentiates between "show the value of this property here" and "show the value of this property here, but write any changes back to the property."
+    // two-way binding: we bind the text field so that it shows the value of our property, but we also bind it so that any changes to the text field also update the property. --> write a dollar sign before them.
+    @State private var name = ""
     var body: some View {
-        Button("Tap Count: \(tapCount)") {
-            self.tapCount += 1
+        Form {
+            TextField("Enter your name", text: $name)
+            Text("Your name is \(name)")
         }
     }
 }
