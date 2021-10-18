@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         ZStack {
-            // Color.red is a view in its own right, which is why it can be used like shapes and text.
-            Color.red.frame(width: 200, height: 200)
-            // you can customize the color
-            Color(red: 1, green: 0.6, blue: 0.4).frame(width:100, height: 100)
+            // LinearGradient Format
+            //LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom)
+
+            // RadialGradient Format
+            //RadialGradient(gradient: Gradient(colors: [.blue, .black]), center: .center, startRadius: 20, endRadius: 200)
             
-            // you can ignore the safe area
-            // if your content is just decorative - like our background color here - then extending it outside the safe area is OK.
-            Color.blue.edgesIgnoringSafeArea(.all)
+            AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center)
             Text("Your content")
         }
         
