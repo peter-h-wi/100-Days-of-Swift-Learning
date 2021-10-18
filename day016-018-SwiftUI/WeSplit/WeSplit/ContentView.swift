@@ -11,44 +11,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    // var body: some View: defines a new computed property called body, which has an interesting type: some View. This means it will return something that conforms to the View protocol, which is our layout.
+    // property wrapper: a special attribute we can place before our properties that effectively gives them super powers.
+    // @State: allows us to work around the limiation of structs: we know we can't change their properties because structs are fixed, but @State allows that value to be stored separately by SwiftUI in a place that can be modified.
+    // @State: designed for simple properties that are stored in one view. --> Apple recommends us to add private access control.
+    @State private var tapCount = 0
+    // why we use struct now class? because SwiftUI destroys and recreates your structs frequently.so keeping them small and simple structs for performance.
+    
+    // swift just doesn't allow to write mutating computed properties, so we can't write "mutating var body: some View ..."
     var body: some View {
-        // NavigationView: large gray space at the top of your UI. This is for adding title and scrolling
-        NavigationView {
-            // Form: scrolling lists of static controls like text and images, but can also include user interactive controls like text fields, toggle switches, buttons, and more.
-            // If you want to have 11 things inside the form you should put some rows inside a Group
-            Form {
-                Group {
-                    Text("Hello, world!")
-                    // .padding() method is a modifier, which are regular methods with one small differnec: they always return a new view that contains borth your original data, plus the extra modification you asked for.
-                        .padding()
-                    Text("Hello, world!")
-                }
-                Group {
-                    Text("Hello, world!")
-                    // .padding() method is a modifier, which are regular methods with one small differnec: they always return a new view that contains borth your original data, plus the extra modification you asked for.
-                        .padding()
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                }
-                // Section: If you want your form to look different when split its items into chunks
-                Section {
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                }
-                Section {
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                }
-                
-            }
-            // .navigationTitle(): Swift creates a new form that has a navigation title plus all the existing contents you provided.
-            .navigationTitle("SwiftUI")
-            .navigationBarTitleDisplayMode(.inline)
+        Button("Tap Count: \(tapCount)") {
+            self.tapCount += 1
         }
-        
     }
 }
 
