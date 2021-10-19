@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        ZStack {
+        VStack {
             // Both do the same
             Button("Tap me!") {
                 print("Button was tapped")
@@ -32,6 +32,16 @@ struct ContentView: View {
             Image(systemName: "pencil")
             
             // By default the screen reader will read your image name if it is enabled, so make sure you give your images clear names if you want to avoid confusing the user. Or, if they don't actually add information that isn't already elsewhere on the screen, use the Image(decorative:) initializer.
+            
+            Button(action: {
+                print("Edit button was tapped")
+            }) {
+                HStack(spacing: 10) {
+                    Image(systemName: "pencil")
+                        .renderingMode(.original)
+                    Text("Edit hihi")
+                }
+            }
         }
         
     }
