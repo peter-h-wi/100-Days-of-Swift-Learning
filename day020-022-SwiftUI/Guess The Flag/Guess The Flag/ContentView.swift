@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var score = 0
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var selectedAnswer = 0
     
     
     var body: some View {
@@ -33,6 +35,7 @@ struct ContentView: View {
                 ForEach(0 ..< 3) { number in
                     Button(action: {
                         self.flagTapped(number)
+                        selectedAnswer = number
                     }) {
                         Image(self.countries[number])
                             .renderingMode(.original)
@@ -43,12 +46,21 @@ struct ContentView: View {
                             .shadow(color: .black, radius: 2)
                     }
                 }
+                Text("Current score is \(score)")
                 Spacer()
             }
             .alert(isPresented: $showingScore) {
-                Alert(title: Text(scoreTitle), message: Text("Your score is ???"), dismissButton: .default(Text("Continue")) {
+                var msg: Text
+                if (scoreTitle == "Correct") {
+                    msg = Text("Your score is \(score)")
+                } else {
+                    msg = Text("Wrong! That's the flag of \(countries[selectedAnswer]).\nYour score is \(score)")
+                }
+                
+                return Alert(title: Text(scoreTitle), message: msg, dismissButton: .default(Text("Continue")) {
                     self.askQuestion()
                 })
+                
             }
         }
         
@@ -57,8 +69,10 @@ struct ContentView: View {
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            score += 1
         } else {
             scoreTitle = "Wrong"
+            score -= 1
         }
         
         showingScore = true
