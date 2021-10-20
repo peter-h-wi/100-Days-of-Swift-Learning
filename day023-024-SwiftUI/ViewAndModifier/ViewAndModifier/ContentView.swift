@@ -22,46 +22,44 @@ import SwiftUI
  */
 
 struct ContentView: View {
+    /* some View vs View
+        some View: one specific type that conforms to the View protocol, but we don't want to say whay.
+        1. We must always return the same type of view.
+            --> Performace. If we were allowed to change views randomly, it would be really slow for SwiftUI to figure out exactly what changed - it would pretty much need to ditch everything and start again after every small change.
+        2. Even though we don't know what view type is going back, the compiler does.
+            --> Important because of the way SwiftUI builds up its data using ModifiedContent.
+     */
+    
+    // The View protocol has an associated type attached to it: we need to say exactly what kind of view it is.
+    //      --> It's similar to the way Swift doesn't let us say "this variable is an array" and instead requires that we say what's in the array: "this variable is a string array"
+    // so...
+    /*
+      // it's not allowed.
+     struct ContentView: View {
+        var body: View {
+            Text("Hello World")
+        }
+     }
+      // but this is allowed.
+     struct ContentView: View {
+        var body: Text {
+            Text("Hello Wrold")
+        }
+     }
+     */
+    /*
+     So, we can write combination of ModifiedContent instead of some View, but it's too much work. so we just use some View to say "this will return one specific type of view, such as Button or Text, but I don't want to say what".
+     */
+    
     var body: some View {
+        // If you create a VStack with two text views inside, SwiftUI silently creates a TupleView to contain those two views. Something like this:
+        // TupleView<(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9)>
+        // that's why SwiftUI doesn't allow more than 10 views inside a parent, cause the TupleView handle 2 views through 10, but no more.
+
         VStack {
             Text("Hello, world!")
-                .padding()
-            // it doesn't make the whole background as red, because for SwiftUI developers, there is nothing behind our view.
-            // -->.background(Color.red)
-            // actually there is something behind our content view called a "UIHostingController": which is the bridge between UIKit and SwiftUI. --> but if you modify, it will not work on. so donjust regard that there is nothing behind our view.
-            // thus, what you can do is using frame() modifier.
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.blue)
-                .edgesIgnoringSafeArea(.all)
-            /* modifier order matters
-                .background(Color.red)
-                .frame(width: 200, height: 200)
-             --> You will not see 200x200 red button with "Hello World" in the middle
-             --> Instead, you will see 200x200 empty square, with "Hello World" in the middle with a red rectangle directly around "Hello World"
-             */
             
-            Button("Hello SwiftUI") {
-                print(type(of: self.body))
-            }
-            .background(Color.red)
-            .frame(width: 200, height: 200)
-            // Whenever you add motifier, it stacks new ModifiedContent up.
-            // --> the order of your modifiers matter.
-            
-            Text("Hello World")
-                .padding()
-                .background(Color.red)
-                .padding()
-                .background(Color.blue)
-                .padding()
-                .background(Color.green)
-                .padding()
-                .background(Color.yellow)
         }
-        
-        
-        
-        
     }
 }
 
