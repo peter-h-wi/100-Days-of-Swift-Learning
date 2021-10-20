@@ -22,24 +22,35 @@ import SwiftUI
  */
 
 struct ContentView: View {
-    @State private var useRedText = false
     
     var body: some View {
-        Button("Hello World") {
-            // flip the Boolean between true and false
-            self.useRedText.toggle()
-        }
-        // ternary operator (condition ? option1 when true : option2 when false)
-        .foregroundColor(useRedText ? .red : .blue)
+        VStack {
         
-        /* you can use if conditions.
-        if self.useRedText {
-            return Text("Hello World")
-        } else {
-            return Text("Hello World")
-                .background(Color.red)
+        VStack {
+            Text("Opt 1")
+                .font(.largeTitle)
+            Text("Opt 2")
+            Text("Opt 3")
+            Text("Opt 4")
         }
+        // environment modifier: you use it instead of adding the modifier to each text.
+        .font(.title)
+        
+        
+        /* environment modifier vs. regular modifier
+         1. if any of those child views override the same modifier, the child's version takes priority.
+            --> font() is an environment modifier, which means the Opt 1 text view can override it with a custom font.
          */
+        VStack {
+            Text("Opt 1")
+                .blur(radius: 5)
+            Text("Opt 2")
+            Text("Opt 3")
+            Text("Opt 4")
+        }
+        // blur() is a regular modifier, so any blurs applied to child views are added to the VStack blur rather than replacing it.
+        .blur(radius: 1)
+        }
     }
 }
 
