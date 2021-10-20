@@ -22,44 +22,24 @@ import SwiftUI
  */
 
 struct ContentView: View {
-    /* some View vs View
-        some View: one specific type that conforms to the View protocol, but we don't want to say whay.
-        1. We must always return the same type of view.
-            --> Performace. If we were allowed to change views randomly, it would be really slow for SwiftUI to figure out exactly what changed - it would pretty much need to ditch everything and start again after every small change.
-        2. Even though we don't know what view type is going back, the compiler does.
-            --> Important because of the way SwiftUI builds up its data using ModifiedContent.
-     */
-    
-    // The View protocol has an associated type attached to it: we need to say exactly what kind of view it is.
-    //      --> It's similar to the way Swift doesn't let us say "this variable is an array" and instead requires that we say what's in the array: "this variable is a string array"
-    // so...
-    /*
-      // it's not allowed.
-     struct ContentView: View {
-        var body: View {
-            Text("Hello World")
-        }
-     }
-      // but this is allowed.
-     struct ContentView: View {
-        var body: Text {
-            Text("Hello Wrold")
-        }
-     }
-     */
-    /*
-     So, we can write combination of ModifiedContent instead of some View, but it's too much work. so we just use some View to say "this will return one specific type of view, such as Button or Text, but I don't want to say what".
-     */
+    @State private var useRedText = false
     
     var body: some View {
-        // If you create a VStack with two text views inside, SwiftUI silently creates a TupleView to contain those two views. Something like this:
-        // TupleView<(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9)>
-        // that's why SwiftUI doesn't allow more than 10 views inside a parent, cause the TupleView handle 2 views through 10, but no more.
-
-        VStack {
-            Text("Hello, world!")
-            
+        Button("Hello World") {
+            // flip the Boolean between true and false
+            self.useRedText.toggle()
         }
+        // ternary operator (condition ? option1 when true : option2 when false)
+        .foregroundColor(useRedText ? .red : .blue)
+        
+        /* you can use if conditions.
+        if self.useRedText {
+            return Text("Hello World")
+        } else {
+            return Text("Hello World")
+                .background(Color.red)
+        }
+         */
     }
 }
 
