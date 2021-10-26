@@ -11,6 +11,8 @@ struct ContentView: View {
     
     var body: some View {
         
+        Text("Major Title")
+            .prominentTitleStyle()
         GridStack(rows: 4, columns: 4) { row, col in
             Text("R\(row) C\(col)")
         }
@@ -63,7 +65,20 @@ struct GridStack<Content: View>: View {
 
 }
 
+struct ProminentTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.blue)
+            .padding()
+    }
+}
 
+extension View {
+    func prominentTitleStyle() -> some View {
+        modifier(ProminentTitle())
+    }
+}
 
 
 
