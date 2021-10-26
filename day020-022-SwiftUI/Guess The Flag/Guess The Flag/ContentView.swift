@@ -37,13 +37,7 @@ struct ContentView: View {
                         self.flagTapped(number)
                         selectedAnswer = number
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                        // clipShape: rectangle, rounded rectangle, circle, and capsule
-                            .clipShape(Capsule())
-                        // overlay: drawing a border around the image -> a capture has a black stroke around its edge
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-                            .shadow(color: .black, radius: 2)
+                        FlagImage(image: self.countries[number])
                     }
                 }
                 Text("Current score is \(score)")
@@ -81,6 +75,19 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+    }
+}
+
+struct FlagImage: View {
+    var image: String
+    var body: some View {
+        Image(image)
+            .renderingMode(.original)
+        // clipShape: rectangle, rounded rectangle, circle, and capsule
+            .clipShape(Capsule())
+        // overlay: drawing a border around the image -> a capture has a black stroke around its edge
+            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+            .shadow(color: .black, radius: 2)
     }
 }
 
