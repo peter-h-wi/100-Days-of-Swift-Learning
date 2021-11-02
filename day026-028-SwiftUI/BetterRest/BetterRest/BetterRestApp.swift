@@ -1,14 +1,14 @@
 //
-//  Guess_The_FlagApp.swift
-//  Guess The Flag
+//  BetterRestApp.swift
+//  BetterRest
 //
-//  Created by Peter Wi on 10/18/21.
+//  Created by Peter Wi on 11/2/21.
 //
 
 import SwiftUI
 
 @main
-struct Guess_The_FlagApp: App {
+struct BetterRestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
