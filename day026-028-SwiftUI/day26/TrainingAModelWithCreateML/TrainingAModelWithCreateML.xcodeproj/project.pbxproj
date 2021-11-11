@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE1F82C72731943B0032B70A /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F82C62731943B0032B70A /* BetterRestApp.swift */; };
-		FE1F82C92731943B0032B70A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1F82C82731943B0032B70A /* ContentView.swift */; };
-		FE1F82CB2731943C0032B70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1F82CA2731943C0032B70A /* Assets.xcassets */; };
-		FE1F82CE2731943C0032B70A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1F82CD2731943C0032B70A /* Preview Assets.xcassets */; };
-		FE3A3346273D5B0400195A6F /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FE3A3345273D5B0400195A6F /* SleepCalculator.mlmodel */; };
+		FE3A3330273D539000195A6F /* TrainingAModelWithCreateMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A332F273D539000195A6F /* TrainingAModelWithCreateMLApp.swift */; };
+		FE3A3332273D539000195A6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3A3331273D539000195A6F /* ContentView.swift */; };
+		FE3A3334273D539100195A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3A3333273D539100195A6F /* Assets.xcassets */; };
+		FE3A3337273D539100195A6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3A3336273D539100195A6F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE1F82C32731943B0032B70A /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE1F82C62731943B0032B70A /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
-		FE1F82C82731943B0032B70A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FE1F82CA2731943C0032B70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE1F82CD2731943C0032B70A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FE3A3345273D5B0400195A6F /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = ../../day26/TrainingAModelWithCreateML/SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		FE3A332C273D539000195A6F /* TrainingAModelWithCreateML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingAModelWithCreateML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3A332F273D539000195A6F /* TrainingAModelWithCreateMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAModelWithCreateMLApp.swift; sourceTree = "<group>"; };
+		FE3A3331273D539000195A6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE3A3333273D539100195A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE3A3336273D539100195A6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FE1F82C02731943B0032B70A /* Frameworks */ = {
+		FE3A3329273D539000195A6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE1F82BA2731943B0032B70A = {
+		FE3A3323273D539000195A6F = {
 			isa = PBXGroup;
 			children = (
-				FE1F82C52731943B0032B70A /* BetterRest */,
-				FE1F82C42731943B0032B70A /* Products */,
+				FE3A332E273D539000195A6F /* TrainingAModelWithCreateML */,
+				FE3A332D273D539000195A6F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FE1F82C42731943B0032B70A /* Products */ = {
+		FE3A332D273D539000195A6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE1F82C32731943B0032B70A /* BetterRest.app */,
+				FE3A332C273D539000195A6F /* TrainingAModelWithCreateML.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE1F82C52731943B0032B70A /* BetterRest */ = {
+		FE3A332E273D539000195A6F /* TrainingAModelWithCreateML */ = {
 			isa = PBXGroup;
 			children = (
-				FE1F82C62731943B0032B70A /* BetterRestApp.swift */,
-				FE1F82C82731943B0032B70A /* ContentView.swift */,
-				FE3A3345273D5B0400195A6F /* SleepCalculator.mlmodel */,
-				FE1F82CA2731943C0032B70A /* Assets.xcassets */,
-				FE1F82CC2731943C0032B70A /* Preview Content */,
+				FE3A332F273D539000195A6F /* TrainingAModelWithCreateMLApp.swift */,
+				FE3A3331273D539000195A6F /* ContentView.swift */,
+				FE3A3333273D539100195A6F /* Assets.xcassets */,
+				FE3A3335273D539100195A6F /* Preview Content */,
 			);
-			path = BetterRest;
+			path = TrainingAModelWithCreateML;
 			sourceTree = "<group>";
 		};
-		FE1F82CC2731943C0032B70A /* Preview Content */ = {
+		FE3A3335273D539100195A6F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FE1F82CD2731943C0032B70A /* Preview Assets.xcassets */,
+				FE3A3336273D539100195A6F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE1F82C22731943B0032B70A /* BetterRest */ = {
+		FE3A332B273D539000195A6F /* TrainingAModelWithCreateML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE1F82D12731943C0032B70A /* Build configuration list for PBXNativeTarget "BetterRest" */;
+			buildConfigurationList = FE3A333A273D539100195A6F /* Build configuration list for PBXNativeTarget "TrainingAModelWithCreateML" */;
 			buildPhases = (
-				FE1F82BF2731943B0032B70A /* Sources */,
-				FE1F82C02731943B0032B70A /* Frameworks */,
-				FE1F82C12731943B0032B70A /* Resources */,
+				FE3A3328273D539000195A6F /* Sources */,
+				FE3A3329273D539000195A6F /* Frameworks */,
+				FE3A332A273D539000195A6F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BetterRest;
-			productName = BetterRest;
-			productReference = FE1F82C32731943B0032B70A /* BetterRest.app */;
+			name = TrainingAModelWithCreateML;
+			productName = TrainingAModelWithCreateML;
+			productReference = FE3A332C273D539000195A6F /* TrainingAModelWithCreateML.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FE1F82BB2731943B0032B70A /* Project object */ = {
+		FE3A3324273D539000195A6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					FE1F82C22731943B0032B70A = {
-						CreatedOnToolsVersion = 13.0;
+					FE3A332B273D539000195A6F = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = FE1F82BE2731943B0032B70A /* Build configuration list for PBXProject "BetterRest" */;
+			buildConfigurationList = FE3A3327273D539000195A6F /* Build configuration list for PBXProject "TrainingAModelWithCreateML" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = FE1F82BA2731943B0032B70A;
-			productRefGroup = FE1F82C42731943B0032B70A /* Products */;
+			mainGroup = FE3A3323273D539000195A6F;
+			productRefGroup = FE3A332D273D539000195A6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE1F82C22731943B0032B70A /* BetterRest */,
+				FE3A332B273D539000195A6F /* TrainingAModelWithCreateML */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FE1F82C12731943B0032B70A /* Resources */ = {
+		FE3A332A273D539000195A6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE1F82CE2731943C0032B70A /* Preview Assets.xcassets in Resources */,
-				FE1F82CB2731943C0032B70A /* Assets.xcassets in Resources */,
+				FE3A3337273D539100195A6F /* Preview Assets.xcassets in Resources */,
+				FE3A3334273D539100195A6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FE1F82BF2731943B0032B70A /* Sources */ = {
+		FE3A3328273D539000195A6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3A3346273D5B0400195A6F /* SleepCalculator.mlmodel in Sources */,
-				FE1F82C92731943B0032B70A /* ContentView.swift in Sources */,
-				FE1F82C72731943B0032B70A /* BetterRestApp.swift in Sources */,
+				FE3A3332273D539000195A6F /* ContentView.swift in Sources */,
+				FE3A3330273D539000195A6F /* TrainingAModelWithCreateMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FE1F82CF2731943C0032B70A /* Debug */ = {
+		FE3A3338273D539100195A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		FE1F82D02731943C0032B70A /* Release */ = {
+		FE3A3339273D539100195A6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,14 +261,14 @@
 			};
 			name = Release;
 		};
-		FE1F82D22731943C0032B70A /* Debug */ = {
+		FE3A333B273D539100195A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BetterRest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TrainingAModelWithCreateML/Preview Content\"";
 				DEVELOPMENT_TEAM = 22875T464M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -281,13 +277,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peterwiAppTeamProjects.BetterRest;
+				PRODUCT_BUNDLE_IDENTIFIER = "peter-h-wi.TrainingAModelWithCreateML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,14 +290,14 @@
 			};
 			name = Debug;
 		};
-		FE1F82D32731943C0032B70A /* Release */ = {
+		FE3A333C273D539100195A6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BetterRest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TrainingAModelWithCreateML/Preview Content\"";
 				DEVELOPMENT_TEAM = 22875T464M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -311,13 +306,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peterwiAppTeamProjects.BetterRest;
+				PRODUCT_BUNDLE_IDENTIFIER = "peter-h-wi.TrainingAModelWithCreateML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE1F82BE2731943B0032B70A /* Build configuration list for PBXProject "BetterRest" */ = {
+		FE3A3327273D539000195A6F /* Build configuration list for PBXProject "TrainingAModelWithCreateML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE1F82CF2731943C0032B70A /* Debug */,
-				FE1F82D02731943C0032B70A /* Release */,
+				FE3A3338273D539100195A6F /* Debug */,
+				FE3A3339273D539100195A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE1F82D12731943C0032B70A /* Build configuration list for PBXNativeTarget "BetterRest" */ = {
+		FE3A333A273D539100195A6F /* Build configuration list for PBXNativeTarget "TrainingAModelWithCreateML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE1F82D22731943C0032B70A /* Debug */,
-				FE1F82D32731943C0032B70A /* Release */,
+				FE3A333B273D539100195A6F /* Debug */,
+				FE3A333C273D539100195A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FE1F82BB2731943B0032B70A /* Project object */;
+	rootObject = FE3A3324273D539000195A6F /* Project object */;
 }
