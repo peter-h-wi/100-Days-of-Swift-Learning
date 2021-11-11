@@ -1,29 +1,15 @@
 //
 //  ContentView.swift
-//  BetterRest
+//  Shared
 //
-//  Created by Peter Wi on 11/2/21.
+//  Created by peter wi on 11/11/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    @State private var sleepAmount = 8.0
-    @State private var wakeUp = Date.now
-    
-    
     var body: some View {
         Form {
-            // By default, steppers are limited only bt the range of their storage.
-            // by using "in" range, we can limit the values
-            // "step": how far to move the value each time
-            Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-            
-            // labelsHidden: remove the label
-            // displayComponents: what to show
-            // in: limit the range
-            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
-            
             // 4. how do we format parameter?
             // day - month - year is not arranging. iOS will automatically format that data using the users' preferences
             Text(Date.now, format: .dateTime.day().month().year())
@@ -33,7 +19,7 @@ struct ContentView: View {
         }
     }
     
-    /* Handling Date and Hours...
+    // Handling Date and Hours...
     func trivialExample() {
         /* 1: Track the seconds
          problem: the calander not always follow 24 hr (eg. summer time)
@@ -59,8 +45,7 @@ struct ContentView: View {
          let minute = components.minute ?? 0
         */
     }
-     */
-    
+     
 }
 
 struct ContentView_Previews: PreviewProvider {
