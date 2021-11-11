@@ -169,48 +169,48 @@ struct ContentView: View {
                     Text("Choose the unit types")
                 }
                 Section {
-                    if (selectedUnit == "Temperature") {
-                        Picker("Input Types", selection: $selectedInputType) {
-                            ForEach(tempTypes, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                        
-                    } else if (selectedUnit == "Length") {
-                        Picker("Input Types", selection: $selectedInputType) {
-                            ForEach(lengthTypes, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                    } else if (selectedUnit == "Time") {
-                        Picker("Input Types", selection: $selectedInputType) {
-                            ForEach(timeTypes, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                    } else {
-                        Picker("Input Types", selection: $selectedInputType) {
-                            ForEach(volumnTypes, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                    }
-                } header: {
-                    Text("Choose the input type")
-                }
-                Section {
                     TextField("Amount", value: $inputAmount, format: FloatingPointFormatStyle.number)
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
+                    if (selectedUnit == "Temperature") {
+                        Picker("Input Types", selection: $selectedInputType) {
+                            ForEach(tempTypes, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                    } else if (selectedUnit == "Length") {
+                        Picker("Input Types", selection: $selectedInputType) {
+                            ForEach(lengthTypes, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                    } else if (selectedUnit == "Time") {
+                        Picker("Input Types", selection: $selectedInputType) {
+                            ForEach(timeTypes, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                    } else {
+                        Picker("Input Types", selection: $selectedInputType) {
+                            ForEach(volumnTypes, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                    }
+                    
+                } header: {
+                    Text("Input")
                 }
+        
                 
                 Section {
+                    Text("\(outputAmount.formatted(.number))")
                     if (selectedUnit == "Temperature") {
                         Picker("Output Types", selection: $selectedOutputType) {
                             ForEach(tempTypes, id: \.self) {
                                 Text($0)
                             }
-                        }
+                        }.labelsHidden()
                     } else if (selectedUnit == "Length") {
                         Picker("Output Types", selection: $selectedOutputType) {
                             ForEach(lengthTypes, id: \.self) {
@@ -231,11 +231,7 @@ struct ContentView: View {
                         }
                     }
                 } header: {
-                    Text("Choose the out type")
-                }
-                
-                Section {
-                    Text("\(outputAmount)")
+                    Text("Output")
                 }
                 
             }
