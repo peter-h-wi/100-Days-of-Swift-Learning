@@ -19,7 +19,7 @@ struct ContentView: View {
     
     private let unitTypes = ["Temperature", "Length", "Time", "Volume"]
     private let tempTypes = ["Celsius", "Fahrenheit", "Kelvin"]
-    private let lengthTypes = ["meters", "kilometers", "feet", "yard", "miles"]
+    private let lengthTypes = ["meters", "kilometers", "feet", "yards", "miles"]
     private let timeTypes = ["seconds", "minutes", "hours", "days"]
     private let volumnTypes = ["milliliters", "liters", "cups", "pints", "gallons"]
     
@@ -54,7 +54,7 @@ struct ContentView: View {
                 convertedValue = inputValue * 1000
             case "feet":
                 convertedValue = inputValue * 0.3048
-            case "yard":
+            case "yards":
                 convertedValue = inputValue * 0.9144
             case "miles":
                 convertedValue = inputValue * 1609.34
@@ -113,7 +113,7 @@ struct ContentView: View {
                 convertedValue /= 1000.0
             case "feet":
                 convertedValue /= 0.3048
-            case "yard":
+            case "yards":
                 convertedValue /= 0.9144
             case "miles":
                 convertedValue /= 1609.34
