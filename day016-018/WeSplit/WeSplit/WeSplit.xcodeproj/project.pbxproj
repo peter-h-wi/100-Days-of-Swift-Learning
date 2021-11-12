@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE23D15B271E05B700E75390 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23D15A271E05B700E75390 /* WeSplitApp.swift */; };
-		FE23D15D271E05B700E75390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23D15C271E05B700E75390 /* ContentView.swift */; };
-		FE23D15F271E05B800E75390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE23D15E271E05B800E75390 /* Assets.xcassets */; };
-		FE23D162271E05B800E75390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE23D161271E05B800E75390 /* Preview Assets.xcassets */; };
+		FE6BBFAC273E26D2009C60A5 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BBFAB273E26D2009C60A5 /* WeSplitApp.swift */; };
+		FE6BBFAE273E26D2009C60A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BBFAD273E26D2009C60A5 /* ContentView.swift */; };
+		FE6BBFB0273E26D2009C60A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6BBFAF273E26D2009C60A5 /* Assets.xcassets */; };
+		FE6BBFB3273E26D2009C60A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6BBFB2273E26D2009C60A5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE23D157271E05B700E75390 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE23D15A271E05B700E75390 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
-		FE23D15C271E05B700E75390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FE23D15E271E05B800E75390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE23D161271E05B800E75390 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE6BBFA8273E26D2009C60A5 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6BBFAB273E26D2009C60A5 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
+		FE6BBFAD273E26D2009C60A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE6BBFAF273E26D2009C60A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE6BBFB2273E26D2009C60A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FE23D154271E05B700E75390 /* Frameworks */ = {
+		FE6BBFA5273E26D2009C60A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE23D14E271E05B700E75390 = {
+		FE6BBF9F273E26D2009C60A5 = {
 			isa = PBXGroup;
 			children = (
-				FE23D159271E05B700E75390 /* WeSplit */,
-				FE23D158271E05B700E75390 /* Products */,
+				FE6BBFAA273E26D2009C60A5 /* WeSplit */,
+				FE6BBFA9273E26D2009C60A5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FE23D158271E05B700E75390 /* Products */ = {
+		FE6BBFA9273E26D2009C60A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE23D157271E05B700E75390 /* WeSplit.app */,
+				FE6BBFA8273E26D2009C60A5 /* WeSplit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE23D159271E05B700E75390 /* WeSplit */ = {
+		FE6BBFAA273E26D2009C60A5 /* WeSplit */ = {
 			isa = PBXGroup;
 			children = (
-				FE23D15A271E05B700E75390 /* WeSplitApp.swift */,
-				FE23D15C271E05B700E75390 /* ContentView.swift */,
-				FE23D15E271E05B800E75390 /* Assets.xcassets */,
-				FE23D160271E05B800E75390 /* Preview Content */,
+				FE6BBFAB273E26D2009C60A5 /* WeSplitApp.swift */,
+				FE6BBFAD273E26D2009C60A5 /* ContentView.swift */,
+				FE6BBFAF273E26D2009C60A5 /* Assets.xcassets */,
+				FE6BBFB1273E26D2009C60A5 /* Preview Content */,
 			);
 			path = WeSplit;
 			sourceTree = "<group>";
 		};
-		FE23D160271E05B800E75390 /* Preview Content */ = {
+		FE6BBFB1273E26D2009C60A5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FE23D161271E05B800E75390 /* Preview Assets.xcassets */,
+				FE6BBFB2273E26D2009C60A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE23D156271E05B700E75390 /* WeSplit */ = {
+		FE6BBFA7273E26D2009C60A5 /* WeSplit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE23D165271E05B800E75390 /* Build configuration list for PBXNativeTarget "WeSplit" */;
+			buildConfigurationList = FE6BBFB6273E26D2009C60A5 /* Build configuration list for PBXNativeTarget "WeSplit" */;
 			buildPhases = (
-				FE23D153271E05B700E75390 /* Sources */,
-				FE23D154271E05B700E75390 /* Frameworks */,
-				FE23D155271E05B700E75390 /* Resources */,
+				FE6BBFA4273E26D2009C60A5 /* Sources */,
+				FE6BBFA5273E26D2009C60A5 /* Frameworks */,
+				FE6BBFA6273E26D2009C60A5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = WeSplit;
 			productName = WeSplit;
-			productReference = FE23D157271E05B700E75390 /* WeSplit.app */;
+			productReference = FE6BBFA8273E26D2009C60A5 /* WeSplit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FE23D14F271E05B700E75390 /* Project object */ = {
+		FE6BBFA0273E26D2009C60A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					FE23D156271E05B700E75390 = {
-						CreatedOnToolsVersion = 13.0;
+					FE6BBFA7273E26D2009C60A5 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = FE23D152271E05B700E75390 /* Build configuration list for PBXProject "WeSplit" */;
+			buildConfigurationList = FE6BBFA3273E26D2009C60A5 /* Build configuration list for PBXProject "WeSplit" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = FE23D14E271E05B700E75390;
-			productRefGroup = FE23D158271E05B700E75390 /* Products */;
+			mainGroup = FE6BBF9F273E26D2009C60A5;
+			productRefGroup = FE6BBFA9273E26D2009C60A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE23D156271E05B700E75390 /* WeSplit */,
+				FE6BBFA7273E26D2009C60A5 /* WeSplit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FE23D155271E05B700E75390 /* Resources */ = {
+		FE6BBFA6273E26D2009C60A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE23D162271E05B800E75390 /* Preview Assets.xcassets in Resources */,
-				FE23D15F271E05B800E75390 /* Assets.xcassets in Resources */,
+				FE6BBFB3273E26D2009C60A5 /* Preview Assets.xcassets in Resources */,
+				FE6BBFB0273E26D2009C60A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FE23D153271E05B700E75390 /* Sources */ = {
+		FE6BBFA4273E26D2009C60A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE23D15D271E05B700E75390 /* ContentView.swift in Sources */,
-				FE23D15B271E05B700E75390 /* WeSplitApp.swift in Sources */,
+				FE6BBFAE273E26D2009C60A5 /* ContentView.swift in Sources */,
+				FE6BBFAC273E26D2009C60A5 /* WeSplitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FE23D163271E05B800E75390 /* Debug */ = {
+		FE6BBFB4273E26D2009C60A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		FE23D164271E05B800E75390 /* Release */ = {
+		FE6BBFB5273E26D2009C60A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,7 +261,7 @@
 			};
 			name = Release;
 		};
-		FE23D166271E05B800E75390 /* Debug */ = {
+		FE6BBFB7273E26D2009C60A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -277,13 +277,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peterwiAppTeamProjects.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = "peter-h-wi.WeSplit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -291,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		FE23D167271E05B800E75390 /* Release */ = {
+		FE6BBFB8273E26D2009C60A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -307,13 +306,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peterwiAppTeamProjects.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = "peter-h-wi.WeSplit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE23D152271E05B700E75390 /* Build configuration list for PBXProject "WeSplit" */ = {
+		FE6BBFA3273E26D2009C60A5 /* Build configuration list for PBXProject "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE23D163271E05B800E75390 /* Debug */,
-				FE23D164271E05B800E75390 /* Release */,
+				FE6BBFB4273E26D2009C60A5 /* Debug */,
+				FE6BBFB5273E26D2009C60A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE23D165271E05B800E75390 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
+		FE6BBFB6273E26D2009C60A5 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE23D166271E05B800E75390 /* Debug */,
-				FE23D167271E05B800E75390 /* Release */,
+				FE6BBFB7273E26D2009C60A5 /* Debug */,
+				FE6BBFB8273E26D2009C60A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FE23D14F271E05B700E75390 /* Project object */;
+	rootObject = FE6BBFA0273E26D2009C60A5 /* Project object */;
 }

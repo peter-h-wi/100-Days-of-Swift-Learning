@@ -2,11 +2,8 @@
 //  ContentView.swift
 //  WeSplit
 //
-//  Created by Peter Wi on 10/18/21.
+//  Created by peter wi on 11/12/21.
 //
-// it contains the intial user interface (UI) for your program, and is where we'll be doing all the work in this project.
-
-
 
 import SwiftUI
 
@@ -17,14 +14,10 @@ struct ContentView: View {
     
     // if we don't use it, the decimal and number keypads will not be dismissed.
     @FocusState private var amountIsFocused: Bool
-     
+    
     var totalPerPerson: Double {
         let peopleCount = Double(numberOfPeople + 2)
-        let tipSelection = Double(tipPercentage)
-        
-        let tipValue = checkAmount / 100 * tipSelection
-        let grandTotal = checkAmount + tipValue
-        let amountPerPerson = grandTotal / peopleCount
+        let amountPerPerson = totalAmount / peopleCount
 
         return amountPerPerson
     }
@@ -75,7 +68,6 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalAmount, format: currencyFormat)
-                        .foregroundColor(tipPercentage == 0 ? .red : .white)
                 } header: {
                     Text("Total amount for the check")
                 }
@@ -84,6 +76,7 @@ struct ContentView: View {
                     Text(totalPerPerson, format: currencyFormat)
                 } header: {
                     Text("Amount per person")
+                        .font(.headline)
                 }
             }
             .navigationTitle("WeSplit")
@@ -99,7 +92,6 @@ struct ContentView: View {
                 }
             }
         }
-        
     }
 }
 
