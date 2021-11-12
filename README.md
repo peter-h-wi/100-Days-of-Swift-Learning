@@ -1,4 +1,6 @@
 # 100 Days of SwiftUI
 
-This repository is storing my 100 days learning Swift and SwiftUI.
-It's following the curriculum of "Hacking with Swift".
+My 100 days of learning Swift and SwiftUI - A tutorial by Paul Hudson "Hacking with Swift"
+
+https://www.hackingwithswift.com/100/swiftui/
+
