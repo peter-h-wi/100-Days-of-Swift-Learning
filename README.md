@@ -8,4 +8,4 @@ https://www.hackingwithswift.com/100/swiftui/
 
 |Day|Name|Screenshots|
 |--|--|--|
-|19|[Challenge Day 1](day019-SwiftUI) - UnitConverter|![Image](day019-SwiftUI/Screenshots/UnitConverter.png =x400)  ![Image](day019-SwiftUI/Screenshots/UnitConverter_2.png =x400)|
+|19|[Challenge Day 1](day019-SwiftUI) - UnitConverter|![Image](day019-SwiftUI/Screenshots/UnitConverter.png =250x)  ![Image](day019-SwiftUI/Screenshots/UnitConverter_2.png =250x)|
