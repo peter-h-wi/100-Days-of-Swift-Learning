@@ -11,3 +11,4 @@ https://www.hackingwithswift.com/100/swiftui/
 |16-18|[WeSplit](day016-018)|<img src="day016-018/Screenshots/WeSplit_1.png" width="150"/><img src="day016-018/Screenshots/WeSplit_2.png" width="150"/>|
 |19|[Challenge Day 1](day019)<br />UnitConverter|<img src="day019/Screenshots/UnitConverter.png" width="150"/><img src="day019/Screenshots/UnitConverter_2.png" width="150"/>|
 |20-22|[Catch The Flag](day020-022)|<img src="day020-022/Screenshots/CatchTheFlag_1.png" width="150"/><img src="day020-022/Screenshots/CatchTheFlag_2.png" width="150"/>|
+|23-24|[View and Modifier](day023-024)|<img src="day024-024/Screenshots/VM_1.png" width="150"/><img src="day023-024/Screenshots/VM_2.png" width="150"/>|
