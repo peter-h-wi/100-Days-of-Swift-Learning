@@ -12,6 +12,7 @@
 		FE4EE09B27490E89001411A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EE09A27490E89001411A4 /* Assets.xcassets */; };
 		FE4EE09E27490E89001411A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EE09D27490E89001411A4 /* Preview Assets.xcassets */; };
 		FE4EE0A5274910EF001411A4 /* IntroducingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE0A4274910EF001411A4 /* IntroducingListView.swift */; };
+		FE4EE0A727491620001411A4 /* LoadingResourcesFromAppBundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE0A627491620001411A4 /* LoadingResourcesFromAppBundleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FE4EE09A27490E89001411A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4EE09D27490E89001411A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE4EE0A4274910EF001411A4 /* IntroducingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroducingListView.swift; sourceTree = "<group>"; };
+		FE4EE0A627491620001411A4 /* LoadingResourcesFromAppBundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingResourcesFromAppBundleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				FE4EE09A27490E89001411A4 /* Assets.xcassets */,
 				FE4EE09C27490E89001411A4 /* Preview Content */,
 				FE4EE0A4274910EF001411A4 /* IntroducingListView.swift */,
+				FE4EE0A627491620001411A4 /* LoadingResourcesFromAppBundleView.swift */,
 			);
 			path = Day29;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4EE09927490E88001411A4 /* ContentView.swift in Sources */,
+				FE4EE0A727491620001411A4 /* LoadingResourcesFromAppBundleView.swift in Sources */,
 				FE4EE09727490E88001411A4 /* Day29App.swift in Sources */,
 				FE4EE0A5274910EF001411A4 /* IntroducingListView.swift in Sources */,
 			);
