@@ -13,6 +13,8 @@
 		FE4EE0DA274A67EF001411A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EE0D9274A67EF001411A4 /* Preview Assets.xcassets */; };
 		FE4EE0E1274A6827001411A4 /* CreatingImplicitAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE0E0274A6827001411A4 /* CreatingImplicitAnimationsView.swift */; };
 		FE4EE0E3274A69B3001411A4 /* CustomizingAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE0E2274A69B3001411A4 /* CustomizingAnimationsView.swift */; };
+		FE4EE0E5274A7149001411A4 /* AnimatingBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE0E4274A7149001411A4 /* AnimatingBindingsView.swift */; };
+		FE4EE0E7274A7485001411A4 /* CreatingExplicitAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE0E6274A7485001411A4 /* CreatingExplicitAnimationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FE4EE0D9274A67EF001411A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE4EE0E0274A6827001411A4 /* CreatingImplicitAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingImplicitAnimationsView.swift; sourceTree = "<group>"; };
 		FE4EE0E2274A69B3001411A4 /* CustomizingAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingAnimationsView.swift; sourceTree = "<group>"; };
+		FE4EE0E4274A7149001411A4 /* AnimatingBindingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBindingsView.swift; sourceTree = "<group>"; };
+		FE4EE0E6274A7485001411A4 /* CreatingExplicitAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingExplicitAnimationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				FE4EE0D8274A67EF001411A4 /* Preview Content */,
 				FE4EE0E0274A6827001411A4 /* CreatingImplicitAnimationsView.swift */,
 				FE4EE0E2274A69B3001411A4 /* CustomizingAnimationsView.swift */,
+				FE4EE0E4274A7149001411A4 /* AnimatingBindingsView.swift */,
+				FE4EE0E6274A7485001411A4 /* CreatingExplicitAnimationsView.swift */,
 			);
 			path = Day32;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4EE0E3274A69B3001411A4 /* CustomizingAnimationsView.swift in Sources */,
+				FE4EE0E5274A7149001411A4 /* AnimatingBindingsView.swift in Sources */,
+				FE4EE0E7274A7485001411A4 /* CreatingExplicitAnimationsView.swift in Sources */,
 				FE4EE0E1274A6827001411A4 /* CreatingImplicitAnimationsView.swift in Sources */,
 				FE4EE0D5274A67ED001411A4 /* ContentView.swift in Sources */,
 				FE4EE0D3274A67ED001411A4 /* Day32App.swift in Sources */,
