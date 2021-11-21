@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var score = 0
     
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -19,6 +20,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                Section("Score") {
+                    Text("\(score)")
+                }
                 Section {
                     TextField("Enter your word", text: $newWord)
                         .autocapitalization(.none)
@@ -41,6 +45,13 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage)
             }
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Button("Restart") {
+                        startGame()
+                    }
+                }
+            }
         }
     }
     
@@ -49,7 +60,21 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         guard answer.count > 0 else { return }
         
+        
+        
+        
         // Extra validation
+        
+        guard isTooShort(word: answer) else {
+            wordError(title: "Word is too short", message: "Too short!")
+            return
+        }
+        
+        guard isStartWord(word: answer) else {
+            wordError(title: "Word is just start word", message: "Should not be start word!")
+            return
+        }
+        
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original!")
             return
@@ -65,6 +90,9 @@ struct ContentView: View {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
         }
+        
+        score += answer.count
+        
         
         withAnimation {
             usedWords.insert(answer, at: 0)
@@ -82,6 +110,9 @@ struct ContentView: View {
                 
                 // 4. Pick one random word, or use "silkworm" as a sensible default
                 rootWord = allWords.randomElement() ?? "silkworm"
+                
+                // reset score
+                score = 0
                 
                 // I we are having everyhing has worked, so we can exit
                 return
@@ -115,6 +146,14 @@ struct ContentView: View {
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
         
         return misspelledRange.location == NSNotFound
+    }
+    
+    func isTooShort(word: String) -> Bool {
+        word.count >= 3
+    }
+    
+    func isStartWord(word: String) -> Bool {
+        word != rootWord
     }
     
     func wordError(title: String, message: String) {
