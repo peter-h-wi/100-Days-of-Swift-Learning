@@ -13,4 +13,5 @@ https://www.hackingwithswift.com/100/swiftui/
 |20-22|[Catch The Flag](day020-022)|<img src="day020-022/Screenshots/CatchTheFlag_1.png" width="150"/><img src="day020-022/Screenshots/CatchTheFlag_2.png" width="150"/>|
 |23-24|[View and Modifier](day023-024)|<img src="day023-024/Screenshots/VM_1.png" width="150"/><img src="day023-024/Screenshots/VM_2.png" width="150"/>|
 |26-28|[Better Rest](day026-028)|<img src="day026-028/Screenshots/frame_1.png" width="150"/><img src="day026-028/Screenshots/frame_2.png" width="150"/>|
+|29-31|[Word Scramble](day029-031)|<img src="day029-031/Screenshots/frame_1.png" width="150"/><img src="day029-031/Screenshots/frame_2.png" width="150"/>|
 
