@@ -14,6 +14,7 @@
 		FE4EE103274B33B9001411A4 /* ControllingAnimationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE102274B33B9001411A4 /* ControllingAnimationStackView.swift */; };
 		FE4EE105274B33DF001411A4 /* AnimatingGesturesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE104274B33DF001411A4 /* AnimatingGesturesSwift.swift */; };
 		FE4EE107274B3937001411A4 /* ShowingHidingViewsTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE106274B3937001411A4 /* ShowingHidingViewsTransitionView.swift */; };
+		FE4EE109274B3A96001411A4 /* CustomTransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE108274B3A96001411A4 /* CustomTransitionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FE4EE102274B33B9001411A4 /* ControllingAnimationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingAnimationStackView.swift; sourceTree = "<group>"; };
 		FE4EE104274B33DF001411A4 /* AnimatingGesturesSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGesturesSwift.swift; sourceTree = "<group>"; };
 		FE4EE106274B3937001411A4 /* ShowingHidingViewsTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingHidingViewsTransitionView.swift; sourceTree = "<group>"; };
+		FE4EE108274B3A96001411A4 /* CustomTransitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FE4EE102274B33B9001411A4 /* ControllingAnimationStackView.swift */,
 				FE4EE104274B33DF001411A4 /* AnimatingGesturesSwift.swift */,
 				FE4EE106274B3937001411A4 /* ShowingHidingViewsTransitionView.swift */,
+				FE4EE108274B3A96001411A4 /* CustomTransitionsView.swift */,
 			);
 			path = Day33;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				FE4EE103274B33B9001411A4 /* ControllingAnimationStackView.swift in Sources */,
 				FE4EE107274B3937001411A4 /* ShowingHidingViewsTransitionView.swift in Sources */,
 				FE4EE105274B33DF001411A4 /* AnimatingGesturesSwift.swift in Sources */,
+				FE4EE109274B3A96001411A4 /* CustomTransitionsView.swift in Sources */,
 				FE4EE0F5274A84BC001411A4 /* Day33App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
