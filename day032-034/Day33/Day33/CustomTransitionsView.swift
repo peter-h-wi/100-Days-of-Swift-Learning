@@ -22,7 +22,7 @@ struct CornerRotateModifier: ViewModifier {
     }
 }
 
-// wrap the modifer in an extension to AnyTransition
+// wrap the modifer in an extension to AnyTransitionj
 extension AnyTransition {
     static var pivot: AnyTransition {
         .modifier(active: CornerRotateModifier(amount: -90, anchor: .topLeading), identity: CornerRotateModifier(amount: 0, anchor: .topLeading))

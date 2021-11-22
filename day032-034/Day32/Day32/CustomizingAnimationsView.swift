@@ -42,7 +42,8 @@ struct CustomizingAnimationsView: View {
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Circle())
-            .overlay(Circle()
+            .overlay(
+                Circle()
                         .stroke(.red)
                         .scaleEffect(animationAmount)
                         .opacity(2 - animationAmount)

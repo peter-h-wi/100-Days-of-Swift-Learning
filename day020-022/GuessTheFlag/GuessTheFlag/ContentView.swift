@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     
+    @State private var isClicked = false
+    @State private var animationAmount = 0.0
+    
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var selectedAnswer = 0
@@ -40,8 +43,15 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                         selectedAnswer = number
+                        withAnimation {
+                            isClicked.toggle()
+                            animationAmount += 360
+                        }
                     }) {
                         FlagImage(image: self.countries[number])
+                            .rotation3DEffect(.degrees(number == selectedAnswer ? animationAmount : 0), axis: (x:0, y:1, z:0))
+                            .opacity(isClicked ? (number == selectedAnswer ? 1 : 0.25) : 1)
+                            .scaleEffect(isClicked ? (number == selectedAnswer ? 1 : 0.8) : 1)
                     }
                 }
             }
@@ -75,6 +85,7 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        isClicked = false
     }
 }
 
