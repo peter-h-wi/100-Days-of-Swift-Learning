@@ -13,6 +13,7 @@
 		FE4EE0FC274A84BD001411A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EE0FB274A84BD001411A4 /* Preview Assets.xcassets */; };
 		FE4EE103274B33B9001411A4 /* ControllingAnimationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE102274B33B9001411A4 /* ControllingAnimationStackView.swift */; };
 		FE4EE105274B33DF001411A4 /* AnimatingGesturesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE104274B33DF001411A4 /* AnimatingGesturesSwift.swift */; };
+		FE4EE107274B3937001411A4 /* ShowingHidingViewsTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EE106274B3937001411A4 /* ShowingHidingViewsTransitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		FE4EE0FB274A84BD001411A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE4EE102274B33B9001411A4 /* ControllingAnimationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingAnimationStackView.swift; sourceTree = "<group>"; };
 		FE4EE104274B33DF001411A4 /* AnimatingGesturesSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGesturesSwift.swift; sourceTree = "<group>"; };
+		FE4EE106274B3937001411A4 /* ShowingHidingViewsTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingHidingViewsTransitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				FE4EE0FA274A84BD001411A4 /* Preview Content */,
 				FE4EE102274B33B9001411A4 /* ControllingAnimationStackView.swift */,
 				FE4EE104274B33DF001411A4 /* AnimatingGesturesSwift.swift */,
+				FE4EE106274B3937001411A4 /* ShowingHidingViewsTransitionView.swift */,
 			);
 			path = Day33;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				FE4EE0F7274A84BC001411A4 /* ContentView.swift in Sources */,
 				FE4EE103274B33B9001411A4 /* ControllingAnimationStackView.swift in Sources */,
+				FE4EE107274B3937001411A4 /* ShowingHidingViewsTransitionView.swift in Sources */,
 				FE4EE105274B33DF001411A4 /* AnimatingGesturesSwift.swift in Sources */,
 				FE4EE0F5274A84BC001411A4 /* Day33App.swift in Sources */,
 			);
