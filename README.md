@@ -14,5 +14,5 @@ https://www.hackingwithswift.com/100/swiftui/
 |23-24|[View and Modifier](day023-024)|<img src="day023-024/Screenshots/VM_1.png" width="150"/><img src="day023-024/Screenshots/VM_2.png" width="150"/>|
 |26-28|[Better Rest](day026-028)|<img src="day026-028/Screenshots/frame_1.png" width="150"/><img src="day026-028/Screenshots/frame_2.png" width="150"/>|
 |29-31|[Word Scramble](day029-031)|<img src="day029-031/Screenshots/frame_1.png" width="150"/><img src="day029-031/Screenshots/frame_2.png" width="150"/>|
-|32-34|[Animations](day032-034)|<img src="day032-034/Screenshots/frame_1.png" width="150"/><img src="day032-034/Screenshots/record.gif" width="140"/>|
+|32-34|[Animations](day032-034)|<img src="day032-034/Screenshots/frame_1.png" width="150"/><img src="day032-034/Screenshots/record.gif" width="135"/>|
 
