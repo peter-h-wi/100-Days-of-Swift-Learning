@@ -11,7 +11,7 @@ import SwiftUI
 struct CupcakeCornerApp: App {
     var body: some Scene {
         WindowGroup {
-            R_W_CodableData_Wth_URLSession()
+            LoadImageFromRemoteServer()
         }
     }
 }
