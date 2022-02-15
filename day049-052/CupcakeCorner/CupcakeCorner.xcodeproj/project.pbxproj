@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FEF5914527BC47C900EBF539 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5914427BC47C900EBF539 /* CupcakeCornerApp.swift */; };
-		FEF5914727BC47C900EBF539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5914627BC47C900EBF539 /* ContentView.swift */; };
+		FEF5914727BC47C900EBF539 /* CodableConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5914627BC47C900EBF539 /* CodableConformance.swift */; };
 		FEF5914927BC47CA00EBF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF5914827BC47CA00EBF539 /* Assets.xcassets */; };
 		FEF5914C27BC47CA00EBF539 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF5914B27BC47CA00EBF539 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		FEF5914127BC47C900EBF539 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF5914427BC47C900EBF539 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
-		FEF5914627BC47C900EBF539 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FEF5914627BC47C900EBF539 /* CodableConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableConformance.swift; sourceTree = "<group>"; };
 		FEF5914827BC47CA00EBF539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF5914B27BC47CA00EBF539 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF5914427BC47C900EBF539 /* CupcakeCornerApp.swift */,
-				FEF5914627BC47C900EBF539 /* ContentView.swift */,
+				FEF5914627BC47C900EBF539 /* CodableConformance.swift */,
 				FEF5914827BC47CA00EBF539 /* Assets.xcassets */,
 				FEF5914A27BC47CA00EBF539 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF5914727BC47C900EBF539 /* ContentView.swift in Sources */,
+				FEF5914727BC47C900EBF539 /* CodableConformance.swift in Sources */,
 				FEF5914527BC47C900EBF539 /* CupcakeCornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
