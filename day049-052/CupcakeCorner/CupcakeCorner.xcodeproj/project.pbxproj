@@ -11,6 +11,7 @@
 		FEF5914727BC47C900EBF539 /* CodableConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5914627BC47C900EBF539 /* CodableConformance.swift */; };
 		FEF5914927BC47CA00EBF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF5914827BC47CA00EBF539 /* Assets.xcassets */; };
 		FEF5914C27BC47CA00EBF539 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF5914B27BC47CA00EBF539 /* Preview Assets.xcassets */; };
+		FEF5915527BC4F3A00EBF539 /* R_W_CodableData_Wth_URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5915427BC4F3A00EBF539 /* R_W_CodableData_Wth_URLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FEF5914627BC47C900EBF539 /* CodableConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableConformance.swift; sourceTree = "<group>"; };
 		FEF5914827BC47CA00EBF539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF5914B27BC47CA00EBF539 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEF5915427BC4F3A00EBF539 /* R_W_CodableData_Wth_URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_W_CodableData_Wth_URLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF5914427BC47C900EBF539 /* CupcakeCornerApp.swift */,
+				FEF5915427BC4F3A00EBF539 /* R_W_CodableData_Wth_URLSession.swift */,
 				FEF5914627BC47C900EBF539 /* CodableConformance.swift */,
 				FEF5914827BC47CA00EBF539 /* Assets.xcassets */,
 				FEF5914A27BC47CA00EBF539 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF5915527BC4F3A00EBF539 /* R_W_CodableData_Wth_URLSession.swift in Sources */,
 				FEF5914727BC47C900EBF539 /* CodableConformance.swift in Sources */,
 				FEF5914527BC47C900EBF539 /* CupcakeCornerApp.swift in Sources */,
 			);
