@@ -8,6 +8,7 @@ https://www.hackingwithswift.com/100/swiftui/
 
 |Day|Name|Screenshots|
 |--|--|--|
+|49-52|[CupcakeCorner](day049-052)|<img src="day049-052/Screenshots/frame_1.png" width="150"/><img src="day049-052/Screenshots/record_1.gif" width="135"/>|
 |32-34|[Animations](day032-034)|<img src="day032-034/Screenshots/frame_1.png" width="150"/><img src="day032-034/Screenshots/record_2.gif" width="135"/>|
 |29-31|[Word Scramble](day029-031)|<img src="day029-031/Screenshots/frame_1.png" width="150"/><img src="day029-031/Screenshots/frame_2.png" width="150"/>|
 |26-28|[Better Rest](day026-028)|<img src="day026-028/Screenshots/frame_1.png" width="150"/><img src="day026-028/Screenshots/frame_2.png" width="150"/>|
